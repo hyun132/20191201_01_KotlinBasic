@@ -45,6 +45,14 @@ class MainActivity : AppCompatActivity() {
                 "bye"->Toast.makeText(this,"작별인사",Toast.LENGTH_SHORT).show()
                 else->Toast.makeText(this, "기타문장", Toast.LENGTH_SHORT).show()
             }
+//
+//            val year = 1988
+//
+//            val age= when(year){
+//                1988->32
+//                in 1991..2000 ->20
+//                else -> -1
+//            }
 
       }
 
