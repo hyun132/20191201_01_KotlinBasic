@@ -18,9 +18,16 @@ class MainActivity : AppCompatActivity() {
         okBtn.setOnClickListener {
 //Ctrl+K 커밋
 
-            var inputString = inputEdt.text.toString()
-            resultTxt.text = inputString
+            var inputString = inputEdt.text.toString()  // get=> 내용을 받아오기.
+            resultTxt.text = inputString // set = > 내용물 설정하기
 
+        }
+
+        okBtn.setOnLongClickListener {
+
+            resultTxt.text ="초기 상태"
+
+            return@setOnLongClickListener true // true는 onclicklistener 무시할건가
         }
 
     }
